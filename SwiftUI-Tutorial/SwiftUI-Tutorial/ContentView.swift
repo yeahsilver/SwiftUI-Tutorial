@@ -8,30 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isFileOpened: Bool = true
-    
+    @State private var userName = "Hi"
+    @State private var isOn = false
     
     var body: some View {
-        var title: String = "File Closed"
-        
-        if(isFileOpened) {
-            title = "File Opened"
-        }
-        
-        func buttonPressed() {
-            
-        }
-        
         return CustomVStack(content: {
-                Text(title)
+                Text(userName)
                     .modifier(TitleViewModifier())
-                Text("Goodbye World")
-                Button(action: buttonPressed) {
-                   Image(systemName: "square.and.arrow.down")
-                }
-            CustomListView()
+            TextField("Enter your name", text: $userName)
+                .border(.gray, width: 1)
+                .padding(.all, 20)
+            
+            HStack{
+                Toggle(isOn: $isOn, label: {
+                    /*@START_MENU_TOKEN@*/Text("Label")/*@END_MENU_TOKEN@*/
+                })
+                CustomToggle(isOn: $isOn)
             }
-        )
+        })
+    }
+}
+
+struct CustomToggle: View {
+    @Binding var isOn: Bool
+    
+    var body: some View {
+        return Image(systemName: isOn ? "wifi" : "wifi.slash")
     }
 }
 
