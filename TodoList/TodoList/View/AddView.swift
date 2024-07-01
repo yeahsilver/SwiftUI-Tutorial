@@ -22,7 +22,8 @@ struct AddView: View {
             VStack {
                 TextField("Type something here...", text: $text)
                     .padding(20)
-                    .frame(height: 55)                .background(Color(red: 228/255, green: 230/255, blue: 240/255))
+                    .frame(height: 55)                
+                    .background(Color(UIColor.secondarySystemBackground))
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .autocorrectionDisabled()
                 

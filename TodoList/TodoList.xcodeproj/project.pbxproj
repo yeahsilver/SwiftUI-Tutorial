@@ -15,6 +15,7 @@
 		969AFABB2C2BD4F4002F9EC5 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AFABA2C2BD4F4002F9EC5 /* AddView.swift */; };
 		969AFABE2C2BD993002F9EC5 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AFABD2C2BD993002F9EC5 /* ItemModel.swift */; };
 		969AFAC12C2BE22A002F9EC5 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AFAC02C2BE22A002F9EC5 /* ListViewModel.swift */; };
+		969AFAC32C2BF97D002F9EC5 /* NoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969AFAC22C2BF97D002F9EC5 /* NoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		969AFABA2C2BD4F4002F9EC5 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		969AFABD2C2BD993002F9EC5 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		969AFAC02C2BE22A002F9EC5 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		969AFAC22C2BF97D002F9EC5 /* NoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				969AFAB62C2BD0CA002F9EC5 /* ListView.swift */,
 				969AFAB82C2BD2FD002F9EC5 /* ListRowView.swift */,
 				969AFABA2C2BD4F4002F9EC5 /* AddView.swift */,
+				969AFAC22C2BF97D002F9EC5 /* NoItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				969AFABE2C2BD993002F9EC5 /* ItemModel.swift in Sources */,
+				969AFAC32C2BF97D002F9EC5 /* NoItemView.swift in Sources */,
 				969AFABB2C2BD4F4002F9EC5 /* AddView.swift in Sources */,
 				969AFAC12C2BE22A002F9EC5 /* ListViewModel.swift in Sources */,
 				969AFAA82C2BCF0B002F9EC5 /* TodoListApp.swift in Sources */,
